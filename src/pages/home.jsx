@@ -1,10 +1,7 @@
-import Header from "../components/header";
 import HomeCoverImg from "../components/home-cover-img";
 import Card from "../components/card";
-import Footer from "../components/footer";
 
 function Home() {
-  Header();
   HomeCoverImg();
 
   //fetching apartments from .json
@@ -23,8 +20,6 @@ function Home() {
     .catch(function (err) {
       console.log(err);
     });
-
-  Footer();
 }
 
 export default Home;

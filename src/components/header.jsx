@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <header>
-      <a href="#" className="logo" title="Kasa">
+      <Link to="/" className="logo" title="Kasa">
         <img src="../assets/logo-orange.png" alt="Logo Kasa" />
-      </a>
+      </Link>
       <nav>
         <ul className="container-banner font-24 font-orange">
           <li>
