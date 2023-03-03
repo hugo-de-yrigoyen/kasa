@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
     <header>
@@ -7,14 +9,14 @@ function Header() {
       <nav>
         <ul className="container-banner font-24 font-orange">
           <li>
-            <a href="#" title="Accueil">
+            <Link to="/" title="Accueil">
               Accueil
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/about" title="A Propos">
+            <Link to="/about" title="A Propos">
               A Propos
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

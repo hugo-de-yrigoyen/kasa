@@ -1,7 +1,7 @@
-import Header from "./header";
-import HomeCoverImg from "./home-cover-img";
-import Card from "./card";
-import Footer from "./footer";
+import Header from "../components/header";
+import HomeCoverImg from "../components/home-cover-img";
+import Card from "../components/card";
+import Footer from "../components/footer";
 
 function Home() {
   Header();
