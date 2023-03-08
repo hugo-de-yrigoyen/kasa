@@ -1,4 +1,4 @@
-function HomeCoverImg() {
+export default function HomeCoverImg() {
   return (
     <div className="container-cover">
       <img src="../assets/home.png" alt="Cover" />
@@ -6,5 +6,3 @@ function HomeCoverImg() {
     </div>
   );
 }
-
-export default HomeCoverImg;

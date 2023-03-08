@@ -1,4 +1,4 @@
-function Footer() {
+export default function Footer() {
   return (
     <footer>
       <a href="#" class="logo" title="Kasa">
@@ -10,5 +10,3 @@ function Footer() {
     </footer>
   );
 }
-
-export default Footer;
