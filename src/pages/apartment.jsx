@@ -1,16 +1,12 @@
 import Header from "../components/layout/header";
 import Footer from "../components/layout/footer";
-import Collapse from "../components/generics/collapse";
-import Tag from "../components/generics/tag";
-import StarEmpty from "../components/icons/star-empty";
-import StarFull from "../components/icons/star-full";
-import "../styles/apartment.css";
+import BodyApartment from "../components/layout/body-apartment";
 
-export default function Appartment() {
+export default function Apartment() {
+  const url = new URL(window.location.href);
+  const id = new URLSearchParams(url.search).get("id");
+
   Header();
-  Collapse();
-  Tag();
-  StarEmpty();
-  StarFull();
+  BodyApartment(id);
   Footer();
 }
