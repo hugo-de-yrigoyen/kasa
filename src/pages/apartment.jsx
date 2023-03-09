@@ -4,6 +4,7 @@ import Collapse from "../components/generics/collapse";
 import Tag from "../components/generics/tag";
 import StarEmpty from "../components/icons/star-empty";
 import StarFull from "../components/icons/star-full";
+import "../styles/apartment.css";
 
 export default function Appartment() {
   Header();

@@ -1,4 +1,9 @@
-function Error() {
+import { useRouteError } from "react-router-dom";
+
+export default function Error() {
+  const error = useRouteError();
+  console.error(error);
+
   return (
     <div>
       <h1 className="font-288 weight-700 font-orange">404</h1>
@@ -9,5 +14,3 @@ function Error() {
     </div>
   );
 }
-
-export default Error;
