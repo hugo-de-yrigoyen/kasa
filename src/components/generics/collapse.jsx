@@ -1,10 +1,12 @@
-export default function Collapse(title, text) {
+import arrow from "../../assets/arrow.png";
+
+export default function Collapse({ title, text }) {
   return (
     <div className="container-collapse">
-      <div className="container-title">
+      <button className="container-title">
         <h2>{title}</h2>
-        <img src=".../assets/arrow.png" alt="collapse" />
-      </div>
+        <img src={arrow} alt="collapse" />
+      </button>
       <p>{text}</p>
     </div>
   );

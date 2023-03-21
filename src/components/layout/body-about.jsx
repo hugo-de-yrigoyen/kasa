@@ -1,10 +1,8 @@
 import Collapse from "../generics/collapse";
-import CoverImg from "../cover-img";
-import "../styles/about.css";
+import AboutCoverImg from "../coverImgs/about-cover-img";
+import "../../styles/about.css";
 
 export default function BodyAbout() {
-  CoverImg("about");
-
   const text1 =
     "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.";
   const text2 =
@@ -14,8 +12,13 @@ export default function BodyAbout() {
   const text4 =
     "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.";
 
-  Collapse("Fiabilité", text1);
-  Collapse("Respect", text2);
-  Collapse("Service", text3);
-  Collapse("Sécurité", text4);
+  return (
+    <div className="bloc-about">
+      <AboutCoverImg />
+      <Collapse title="Fiabilité" text={text1} />
+      <Collapse title="Respect" text={text2} />
+      <Collapse title="Service" text={text3} />
+      <Collapse title="Sécurité" text={text4} />
+    </div>
+  );
 }

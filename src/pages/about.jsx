@@ -4,7 +4,11 @@ import BodyAbout from "../components/layout/body-about";
 import "../styles/about.css";
 
 export default function About() {
-  Header();
-  BodyAbout();
-  Footer();
+  return (
+    <div>
+      <Header />
+      <BodyAbout />
+      <Footer />
+    </div>
+  );
 }

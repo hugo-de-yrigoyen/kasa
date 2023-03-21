@@ -1,50 +1,32 @@
-import { useState, useEffect } from "react";
-import CoverImg from "../components/cover-img";
+import { useParams } from "react-router-dom";
+import data from "../../datas/logements.json";
+import ApartmentCoverImg from "../coverImgs/apartment-cover-img";
 import Title from "../generics/title";
 import Host from "../generics/host";
-import Collapse from "../components/generics/collapse";
-import Tag from "../components/generics/tag";
-import Stars from "../components/generics/stars";
-import "../styles/apartment.css";
+import Collapse from "../generics/collapse";
+import Tags from "../generics/tag";
+import Stars from "../generics/stars";
+import "../../styles/apartment.css";
 
-export default function BodyApartment(id) {
-  const [data, setData] = useState([]);
-  //fetching apartments from .json
-  const getData = () => {
-    fetch("../datas/logements.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
-      .then(function (res) {
-        if (res.ok) {
-          console.log(res);
-          return res.json();
-        }
-      })
-      .then(function (myJson) {
-        console.log(myJson);
-        setData(myJson);
-      })
-      .catch(function (err) {
-        console.log(err);
-      });
-  };
-  useEffect(() => {
-    getData();
-  }, []);
-  let i = 0;
-  while (data[i].id !== { id } && i < data.length) {
-    i++;
-  }
-  CoverImg(data[i].cover);
-  Title(data[i].title, data[i].location);
-  for (let n = 0; n < data.tags.length; n++) {
-    Tag(data[i].tags[n]);
-  }
-  Host(data[i].host.name, data[i].host.picture);
-  Stars(data[i].rating);
-  Collapse("Description", data[i].description);
-  Collapse("Équipements", data[i].equipments);
+export default function BodyApartment() {
+  const { apartmentId } = useParams();
+
+  let apartment = "";
+  data.forEach((log) => {
+    if (log.id === apartmentId) {
+      apartment = log;
+    }
+  });
+
+  return (
+    <div className="bloc-apartment">
+      <ApartmentCoverImg apartment={apartment} />
+      <Title apartment={apartment} />
+      <Host name={apartment.host.name} img={apartment.host.picture} />
+      <Stars rating={apartment.rating} />
+      <Tags tags={apartment.tags} />
+      <Collapse title="Description" text={apartment.description} />
+      <Collapse title="Équipements" text={apartment.equipments} />
+    </div>
+  );
 }

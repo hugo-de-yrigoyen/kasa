@@ -1,10 +1,14 @@
 import Header from "../components/layout/header";
 import Footer from "../components/layout/footer";
-import Error from "../components/ErrorPage/index";
-import "../styles/errorPage.css";
+import BodyError from "../components/layout/body-error";
+import "../styles/error.css";
 
 export default function ErrorPage() {
-  Header();
-  Error();
-  Footer();
+  return (
+    <div>
+      <Header />
+      <BodyError />
+      <Footer />
+    </div>
+  );
 }

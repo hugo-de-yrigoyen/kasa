@@ -1,4 +1,4 @@
-export default function Host(name, img) {
+export default function Host({ name, img }) {
   return (
     <div className="bloc-host">
       <span>{name}</span>
