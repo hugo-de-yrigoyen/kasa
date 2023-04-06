@@ -1,0 +1,20 @@
+.bloc-host {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  font-weight: 500;
+  color: #ff6060;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.bloc-host img {
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+}
+
+.bloc-name p {
+  text-align: end;
+}

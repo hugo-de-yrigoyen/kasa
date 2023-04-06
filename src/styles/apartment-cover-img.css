@@ -1,0 +1,8 @@
+.bloc-apartment .cover-img img {
+    width: 100%;
+    max-width: 1240px;
+    height: 415px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-bottom: 25px;
+  }

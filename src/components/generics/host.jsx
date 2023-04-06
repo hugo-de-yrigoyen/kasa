@@ -1,8 +1,18 @@
-export default function Host({ name, img }) {
+import "../../styles/host.css";
+
+export default function Host({ apartment }) {
+  let { name, picture } = apartment.host;
+
+  //Splits first name and last name
+  let fullName = name.split(" ");
+  
   return (
     <div className="bloc-host">
-      <span>{name}</span>
-      <img src={img} alt={name} />
+      <div className="bloc-name">
+        <span>{fullName[0]}</span>
+        <p>{fullName[1]}</p>
+      </div>
+      <img src={picture} alt={name} />
     </div>
   );
 }

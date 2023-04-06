@@ -5,9 +5,11 @@ import "../styles/error.css";
 
 export default function ErrorPage() {
   return (
-    <div>
-      <Header />
-      <BodyError />
+    <div className="bloc-page">
+      <div className="bloc-error">
+        <Header />
+        <BodyError />
+      </div>
       <Footer />
     </div>
   );

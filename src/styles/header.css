@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0px 20px;
+  width: 100%;
+}
+
+.container-banner {
+  list-style: none;
+  display: flex;
+  width: auto;
+  font-size: 24px;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+
+.container-banner a,
+.container-banner a:visited {
+  text-decoration: none;
+  padding-left: 60px;
+  color: #ff6060;
+}
+
+.container-banner a:hover,
+.container-banner a:focus {
+  text-decoration: underline;
+}

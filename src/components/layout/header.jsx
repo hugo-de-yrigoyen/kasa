@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo-orange.png";
+import "../../styles/header.css";
 
-function Header() {
+export default function Header() {
   return (
     <header>
-      <Link to="/" className="logo" title="Kasa">
+      <Link to="/" title="Kasa">
         <img src={logo} alt="Logo Kasa" />
       </Link>
       <nav>
-        <ul className="container-banner font-24 font-orange">
+        <ul className="container-banner">
           <li>
             <Link to="/" title="Accueil">
               Accueil
@@ -24,5 +25,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;

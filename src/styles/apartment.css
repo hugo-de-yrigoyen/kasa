@@ -1,0 +1,30 @@
+.bloc-apartment {
+  max-width: 1240px;
+  margin: 0px 100px;
+}
+
+.bloc-presentation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.bloc-text {
+  max-width: 70%;
+}
+
+.bloc-user {
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bloc-collapse {
+  display: flex;
+  gap: 70px;
+}
+
+.bloc-apartment .container-collapse h2 {
+  font-size: 18px;
+}

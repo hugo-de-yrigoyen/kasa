@@ -6,10 +6,12 @@ import "../styles/home.css";
 
 export default function Home() {
   return (
-    <div className="bloc-home">
-      <Header />
-      <HomeCoverImg />
-      <Cards />
+    <div className="bloc-page">
+      <div className="bloc-home">
+        <Header />
+        <HomeCoverImg />
+        <Cards />
+      </div>
       <Footer />
     </div>
   );

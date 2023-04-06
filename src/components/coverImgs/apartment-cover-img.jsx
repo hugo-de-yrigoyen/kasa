@@ -1,3 +1,9 @@
+import "../../styles/apartment-cover-img.css";
+
 export default function ApartmentCoverImg({ apartment }) {
-  return <img src={apartment.cover} alt="Cover" />;
+  return (
+    <div className="cover-img">
+      <img src={apartment.cover} alt="Cover" />
+    </div>
+  );
 }

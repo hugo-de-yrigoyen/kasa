@@ -1,0 +1,13 @@
+.bloc-title {
+    color: #ff6060;
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-weight: 500;
+  }
+  
+  .bloc-title p {
+    font-weight: 500;
+    font-size: 18px;
+  }

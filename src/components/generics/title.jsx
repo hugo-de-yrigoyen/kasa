@@ -1,3 +1,5 @@
+import "../../styles/title.css";
+
 export default function Title({ apartment }) {
   let { title, location } = apartment;
   return (

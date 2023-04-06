@@ -1,0 +1,30 @@
+.bloc-apartments {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #f7f7f7;
+    border-radius: 25px;
+    margin: 40px 0px;
+    gap: 50px;
+    padding: 50px;
+  }
+  
+  .apartment {
+    position: relative;
+  }
+  
+  .apartment img {
+    object-fit: cover;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+  }
+  
+  .apartment h2 {
+    color: white;
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    bottom: 20px;
+    max-width: 300px;
+  }

@@ -11,6 +11,7 @@ import "../../styles/apartment.css";
 export default function BodyApartment() {
   const { apartmentId } = useParams();
 
+  //Searching for apartment's datas in .json based on URL's apartment's ID
   let apartment = "";
   data.forEach((log) => {
     if (log.id === apartmentId) {
@@ -19,14 +20,22 @@ export default function BodyApartment() {
   });
 
   return (
-    <div className="bloc-apartment">
+    <div className="container-apartment">
       <ApartmentCoverImg apartment={apartment} />
-      <Title apartment={apartment} />
-      <Host name={apartment.host.name} img={apartment.host.picture} />
-      <Stars rating={apartment.rating} />
-      <Tags tags={apartment.tags} />
-      <Collapse title="Description" text={apartment.description} />
-      <Collapse title="Équipements" text={apartment.equipments} />
+      <div className="bloc-presentation">
+        <div className="bloc-text">
+          <Title apartment={apartment} />
+          <Tags apartment={apartment} />
+        </div>
+        <div className="bloc-user">
+          <Host apartment={apartment} />
+          <Stars apartment={apartment} />
+        </div>
+      </div>
+      <div className="bloc-collapse">
+        <Collapse title="Description" text={apartment.description} />
+        <Collapse title="Équipements" text={apartment.equipments} />
+      </div>
     </div>
   );
 }

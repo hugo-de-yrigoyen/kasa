@@ -4,9 +4,11 @@ import BodyApartment from "../components/layout/body-apartment";
 
 export default function Apartment() {
   return (
-    <div>
-      <Header />
-      <BodyApartment />
+    <div className="bloc-page">
+      <div className="bloc-apartment">
+        <Header />
+        <BodyApartment />
+      </div>
       <Footer />
     </div>
   );

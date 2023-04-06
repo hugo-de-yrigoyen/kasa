@@ -1,10 +1,10 @@
-//import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import data from "../../datas/logements.json";
+import "../../styles/card.css";
 
 export default function Card() {
   return (
-    //Creating apartments' cards from datas
+    //Creating apartments' cards from .json datas
     <div className="bloc-apartments">
       {data &&
         data.length > 0 &&
@@ -13,7 +13,7 @@ export default function Card() {
             to={`apartments/${apartment.id}`}
             title={apartment.title}
             key={apartment.id}>
-            <section>
+            <section className="apartment">
               <img src={apartment.cover} alt={apartment.title} />
               <h2>{apartment.title}</h2>
             </section>

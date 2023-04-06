@@ -1,0 +1,19 @@
+.bloc-tags {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .tag {
+    width: 115px;
+    height: 25px;
+    background-color: #ff6060;
+    border-radius: 10px;
+    padding: 5px 40px 0px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
