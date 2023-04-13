@@ -13,3 +13,14 @@ footer {
 footer span {
   padding-top: 40px;
 }
+
+@media (max-width: 600px) {
+  footer {
+    padding: 70px 0px;
+    font-size: 12px;
+  }
+
+  footer span {
+    padding-top: 30px;
+  }
+}

@@ -6,7 +6,6 @@
   font-weight: 500;
   color: #ff6060;
   font-size: 18px;
-  margin-bottom: 15px;
 }
 
 .bloc-host img {
@@ -17,4 +16,15 @@
 
 .bloc-name p {
   text-align: end;
+}
+
+@media (max-width: 600px) {
+  .bloc-host img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .bloc-host {
+    font-size: 12px;
+  }
 }

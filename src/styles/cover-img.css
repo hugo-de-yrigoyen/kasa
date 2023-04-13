@@ -19,10 +19,69 @@
 
 .container-cover h1 {
   position: absolute;
-  top: 35%;
-  bottom: 10%;
-  left: 20%;
-  right: 5%;
+  padding-top: 45px;
+  top: 3vw;
+  left: 0;
+  width: 100%;
+  text-align: center;
   font-size: 48px;
+  font-weight: 500;
   color: white;
+}
+
+.cover {
+  width: 100%;
+  max-width: 1240px;
+  height: 415px;
+  object-fit: cover;
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+
+.arrows {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 305px;
+  margin: 0px 25px;
+  width: 75%;
+}
+
+@media (max-width: 600px) {
+  .container-cover {
+    margin-top: 0px;
+  }
+
+  .bloc-home .container-cover img {
+    height: 111px;
+  }
+
+  .container-cover img {
+    border-radius: 10px;
+  }
+
+  .container-cover h1 {
+    font-size: 24px;
+    text-align: left;
+    padding-top: 0px;
+    top: 25%;
+    left: 5%;
+    max-width: 220px;
+  }
+
+  .cover {
+    height: 255px;
+    margin-bottom: 0px;
+  }
+
+  .arrows {
+    top: 210px;
+    margin: 0px 5px;
+    width: 87%;
+  }
+
+  .arrows img {
+    width: 11.67px;
+    height: 19.8px;
+  }
 }

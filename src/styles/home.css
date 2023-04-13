@@ -1,6 +1,13 @@
 .bloc-home {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  margin: 0px 100px;
+  max-width: 1152px;
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  .bloc-home {
+    width: 90%;
+  }
 }

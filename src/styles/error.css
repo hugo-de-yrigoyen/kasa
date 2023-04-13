@@ -1,26 +1,52 @@
 .bloc-error {
-  margin: 0px 100px 160px;
+  max-width: 1152px;
+  width: 80%;
+  margin: auto;
   color: #ff6060;
   text-align: center;
+  padding-bottom: 160px;
 }
 
-.bloc-error h1 {
+.error-container h1 {
   margin-top: 100px;
   margin-bottom: 20px;
   font-size: 288px;
   font-weight: 700;
 }
 
-.bloc-error p {
+.error-container p {
   margin-bottom: 180px;
   font-size: 36px;
   font-weight: 500;
 }
 
-.bloc-error a,
-.bloc-error a:visited {
+.error-container a,
+.error-container a:visited {
   font-size: 18px;
   font-weight: 500;
   text-decoration: underline;
   color: #ff6060;
+}
+
+@media (max-width: 600px) {
+  .bloc-error {
+    width: 90%;
+    padding-bottom: 220px;
+  }
+
+  .error-container h1 {
+    margin-top: 160px;
+    margin-bottom: 10px;
+    font-size: 96px;
+  }
+
+  .error-container p {
+    margin-bottom: 140px;
+    font-size: 18px;
+  }
+
+  .error-container a,
+  .error-container a:visited {
+    font-size: 14px;
+  }
 }

@@ -10,19 +10,38 @@ header {
   list-style: none;
   display: flex;
   width: auto;
+  gap: 60px;
   font-size: 24px;
+  font-weight: 500;
   justify-content: space-between;
   white-space: nowrap;
+  padding-left: 0px;
 }
 
 .container-banner a,
 .container-banner a:visited {
   text-decoration: none;
-  padding-left: 60px;
   color: #ff6060;
 }
 
 .container-banner a:hover,
 .container-banner a:focus {
   text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 20px 0px;
+  }
+
+  .container-banner {
+    font-size: 12px;
+    gap: 15px;
+    text-transform: uppercase;
+  }
+
+  header img {
+    width: 145px;
+    height: 47px;
+  }
 }

@@ -1,4 +1,5 @@
-import arrow from "../../assets/arrow.png";
+import arrowUp from "../../assets/arrow-up.png";
+import arrowDown from "../../assets/arrow-down.png";
 import { useState } from "react";
 import "../../styles/collapse.css";
 
@@ -24,7 +25,7 @@ export default function Collapse({ title, text }) {
         id={title}
         onClick={() => setIsOpen(false)}>
         <h2>{title}</h2>
-        <img src={arrow} alt="collapse" />
+        <img src={arrowUp} alt="collapse" />
       </button>
       <div className="bloc-paragraph">{paragraph}</div>
     </section>
@@ -35,7 +36,7 @@ export default function Collapse({ title, text }) {
         id={title}
         onClick={() => setIsOpen(true)}>
         <h2>{title}</h2>
-        <img src={arrow} alt="collapse" />
+        <img src={arrowDown} alt="collapse" />
       </button>
     </section>
   );

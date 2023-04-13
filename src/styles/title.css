@@ -1,13 +1,27 @@
 .bloc-title {
-    color: #ff6060;
-  }
-  
-  h1 {
-    font-size: 36px;
-    font-weight: 500;
-  }
-  
-  .bloc-title p {
-    font-weight: 500;
+  color: #ff6060;
+}
+
+.bloc-title h1 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 51.34px;
+  margin-bottom: 5px;
+}
+
+.bloc-title p {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .bloc-title h1 {
     font-size: 18px;
+    line-height: 25.67px;
+    margin-bottom: 15px;
   }
+
+  .bloc-title p {
+    font-size: 14px;
+  }
+}

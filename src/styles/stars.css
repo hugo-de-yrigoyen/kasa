@@ -3,7 +3,15 @@
 }
 
 .bloc-stars img {
-  height: 30px;
-  width: 30px;
-  margin-left: 10px;
+  height: 24px;
+  width: 24.75px;
+  margin-left: 15px;
+}
+
+@media (max-width: 600px) {
+  .bloc-stars img {
+    height: 13px;
+    width: 13.41px;
+    margin-left: 5px;
+  }
 }

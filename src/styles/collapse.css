@@ -1,6 +1,6 @@
 .container-collapse {
-  margin: 25px 0px;
-  width: 100%;
+  margin-top: 30px;
+  width: 75%;
   height: 100%;
   max-width: 1023px;
   background-color: #f7f7f7;
@@ -22,12 +22,40 @@
 
 .container-collapse h2 {
   color: white;
+  font-size: 24px;
   font-weight: 500;
 }
 
 .bloc-paragraph {
-  padding: 25px 10px 10px 10px;
+  padding: 25px 10px 10px;
   color: #ff6060;
   font-weight: 400;
-  line-height: 25px;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+@media (max-width: 600px) {
+  .container-collapse {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .bloc-paragraph {
+    padding: 15px 10px 50px 10px;
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  .container-collapse h2 {
+    font-size: 13px;
+  }
+
+  .container-title {
+    padding: 7px 5px 7px 15px;
+  }
+
+  .container-title img {
+    width: 16px;
+    height: 9px;
+  }
 }

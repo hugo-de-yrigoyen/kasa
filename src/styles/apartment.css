@@ -1,12 +1,16 @@
+.container-apartment {
+  margin-bottom: 10px;
+}
+
 .bloc-apartment {
-  max-width: 1240px;
-  margin: 0px 100px;
+  max-width: 1152px;
+  width: 80%;
+  margin: auto;
 }
 
 .bloc-presentation {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
 }
 
 .bloc-text {
@@ -27,4 +31,41 @@
 
 .bloc-apartment .container-collapse h2 {
   font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .bloc-apartment {
+    width: 90%;
+  }
+
+  .bloc-apartment .container-collapse h2 {
+    font-size: 13px;
+  }
+
+  .bloc-collapse {
+    display: block;
+  }
+
+  .bloc-presentation {
+    display: block;
+  }
+
+  .bloc-text {
+    max-width: 100%;
+  }
+
+  .bloc-user {
+    margin-top: 10px;
+    max-width: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .bloc-stars {
+    order: 1;
+  }
+
+  .bloc-host {
+    order: 2;
+  }
 }
