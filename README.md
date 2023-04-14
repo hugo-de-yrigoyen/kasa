@@ -13,4 +13,4 @@
 
 ## Démarrage
 
-A la racine du projet, lancez la commande "npm
+A la racine du projet, lancez la commande "npm run start"
