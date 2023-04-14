@@ -31,7 +31,6 @@
 
 .cover {
   width: 100%;
-  max-width: 1240px;
   height: 415px;
   object-fit: cover;
   border-radius: 25px;
@@ -42,6 +41,7 @@
   position: absolute;
   top: 300px;
   width: 80%;
+  max-width: 1440px;
 }
 
 #leftArrow {
@@ -101,7 +101,7 @@
   #leftArrow {
     left: 5px;
   }
-  
+
   #rightArrow {
     right: 5px;
   }
