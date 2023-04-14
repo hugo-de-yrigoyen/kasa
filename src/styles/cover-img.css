@@ -40,11 +40,25 @@
 
 .arrows {
   position: absolute;
-  display: flex;
-  justify-content: space-between;
-  top: 305px;
-  margin: 0px 25px;
-  width: 75%;
+  top: 300px;
+  width: 80%;
+}
+
+#leftArrow {
+  position: absolute;
+  left: 25px;
+}
+
+#rightArrow {
+  position: absolute;
+  right: 25px;
+}
+
+.arrows button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }
 
 @media (max-width: 600px) {
@@ -76,12 +90,19 @@
 
   .arrows {
     top: 210px;
-    margin: 0px 5px;
-    width: 87%;
+    width: 90%;
   }
 
   .arrows img {
     width: 11.67px;
     height: 19.8px;
+  }
+
+  #leftArrow {
+    left: 5px;
+  }
+  
+  #rightArrow {
+    right: 5px;
   }
 }
