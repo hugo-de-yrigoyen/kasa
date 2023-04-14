@@ -1,6 +1,5 @@
 # Kasa - Projet d'études
 
-- https://hugo-de-yrigoyen.github.io/kasa/
 - Dans le cadre des mes études de développeur web
 - Site de réservation de logements sur **React en JSX et CSS uniquement** (pas de Typescript)
 
