@@ -10,3 +10,7 @@
   https://course.oc-static.com/projects/Front-End+V2/P9+React+1/Coding+guidelines+Kasa+FR.pdf
 - Maquette Figma :
   https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?node-id=3%3A0
+
+## Démarrage
+
+A la racine du projet, lancez la commande "npm
