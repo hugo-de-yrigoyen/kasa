@@ -31,7 +31,7 @@ export default function Gallery({ apartment }) {
     </div>
   ) : (
     <div className="cover-img">
-      <img src={apartment.pictures[number]} className="cover" alt="cover" />
+      <img src={apartment.pictures} className="cover" alt="cover" />
     </div>
   );
 }
