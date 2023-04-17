@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import data from "../../datas/logements.json";
-import ApartmentCoverImg from "../coverImgs/apartment-cover-img";
+import Gallery from "../coverImgs/gallery";
 import Title from "../generics/title";
 import Host from "../generics/host";
 import Collapse from "../generics/collapse";
@@ -21,7 +21,7 @@ export default function BodyApartment() {
 
   return (
     <div className="container-apartment">
-      <ApartmentCoverImg apartment={apartment} />
+      <Gallery apartment={apartment} />
       <div className="bloc-presentation">
         <div className="bloc-text">
           <Title apartment={apartment} />

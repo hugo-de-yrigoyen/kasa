@@ -12,10 +12,13 @@
   width: 64px;
   height: 64px;
   border-radius: 100%;
+  cursor: pointer;
 }
 
-.bloc-name p {
+.bloc-name p,
+.bloc-name span {
   text-align: end;
+  cursor: pointer;
 }
 
 @media (max-width: 600px) {
