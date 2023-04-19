@@ -13,3 +13,11 @@
 ## Démarrage
 
 A la racine du projet, lancez la commande "npm run start"
+
+## Évaluation
+
+- Projet validé
+- Commentaires :
+  ![Évaluation 1](evaluation/evaluation1.png "Évaluation 1")
+  ![Évaluation 2](evaluation/evaluation2.png "Évaluation 2")
+  ![Évaluation 3](evaluation/evaluation3.png "Évaluation 3")
