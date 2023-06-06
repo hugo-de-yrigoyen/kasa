@@ -5,7 +5,7 @@ import "../../styles/footer.css";
 export default function Footer() {
   return (
     <footer>
-      <Link to="kasa" title="Kasa">
+      <Link to="/" title="Kasa">
         <img src={logo} alt="Logo Kasa" />
       </Link>
       <span>
