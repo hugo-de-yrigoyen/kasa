@@ -14,11 +14,11 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "about",
+    path: "kasa/about",
     element: <About />,
   },
   {
-    path: "apartments/:apartmentId",
+    path: "kasa/apartments/:apartmentId",
     element: <Apartment />,
     errorElement: <ErrorPage />,
   },
