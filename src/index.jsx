@@ -9,7 +9,7 @@ import "./styles/index.css";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "kasa",
     element: <Home />,
     errorElement: <ErrorPage />,
   },
