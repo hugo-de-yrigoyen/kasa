@@ -16,7 +16,7 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link to="/about" title="A Propos">
+            <Link to="/kasa/about" title="A Propos">
               A Propos
             </Link>
           </li>
