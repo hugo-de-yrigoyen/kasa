@@ -5,7 +5,7 @@ import "../../styles/footer.css";
 export default function Footer() {
   return (
     <footer>
-      <Link to="kasa" title="Kasa">
+      <Link to="/kasa" title="Kasa">
         <img src={logo} alt="Logo Kasa" />
       </Link>
       <span>© 2020 Kasa. All rights reserved</span>
