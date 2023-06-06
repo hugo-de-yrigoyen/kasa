@@ -5,18 +5,18 @@ import "../../styles/header.css";
 export default function Header() {
   return (
     <header>
-      <Link to="/" title="Kasa">
+      <Link to="kasa" title="Kasa">
         <img src={logo} alt="Logo Kasa" />
       </Link>
       <nav>
         <ul className="container-banner">
           <li>
-            <Link to="/" title="Accueil">
+            <Link to="kasa" title="Accueil">
               Accueil
             </Link>
           </li>
           <li>
-            <Link to="/about" title="A Propos">
+            <Link to="about" title="A Propos">
               A Propos
             </Link>
           </li>
