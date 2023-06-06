@@ -9,16 +9,16 @@ import "./styles/index.css";
 
 const router = createBrowserRouter([
   {
-    path: "/kasa",
+    path: "/",
     element: <Home />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/kasa/about",
+    path: "about",
     element: <About />,
   },
   {
-    path: "/kasa/apartments/:apartmentId",
+    path: "apartments/:apartmentId",
     element: <Apartment />,
     errorElement: <ErrorPage />,
   },
